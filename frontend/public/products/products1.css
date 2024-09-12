@@ -1,0 +1,215 @@
+/* Promo Section Styles */
+.promo-section {
+    padding: 40px 20px;
+    background-color: #fff;
+    width: 80vw;
+    margin: 0 auto; /* Center the promo section */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.promo-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+.promo-header {
+    text-align: left;
+    max-width: 100%;
+}
+
+.promo-header h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    color: #012a4a;
+    font-weight: bold;
+}
+
+.promo-header p {
+    font-size: 1rem;
+    color: #468faf;
+    margin-top: 10px;
+}
+
+.promo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.promo-item {
+    background-color: #f9f9f9;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+
+.promo-item.large {
+    grid-row: span 2;
+}
+
+
+.bedroom {
+    background-image: url('../site-image/carosel/Laptops.webp');
+}
+.all-products {
+    background-image: url('../site-image/carosel/See -All.webp');
+}
+.kitchen {
+    background-image: url('../site-image/carosel/Headphones.webp');
+}
+.living-room {
+    background-image: url('../site-image/carosel/rooms.webp');
+}
+
+.promo-text {
+    padding: 20px;
+    background-color: rgb(0 0 0 / 57%) ;
+    border-radius: 10px;
+}
+
+
+
+.promo-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.promo-text a {
+    font-size: 1rem;
+    color: #012a4a;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.promo-text a:hover {
+    color: #0881dd;
+}
+
+
+.promo-text a i {
+    margin-left: 5px;
+    font-size: 0.9rem;
+    transition: transform 0.3s ease;
+}
+
+.promo-text a:hover i {
+    transform: translateX(5px);
+}
+
+.promo-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .promo-section {
+        width: 90vw; /* Increase width to use more space on smaller screens */
+        padding: 30px 15px; /* Reduce padding */
+    }
+
+    .promo-container {
+        grid-template-columns: 1fr; /* Stack columns vertically */
+        gap: 15px; /* Reduce gap */
+    }
+
+    .promo-header h1 {
+        font-size: 2rem; /* Reduce font size */
+    }
+
+    .promo-header p {
+        font-size: 0.9rem; /* Reduce font size */
+    }
+  
+    .promo-grid {
+        grid-template-columns: 1fr; /* Stack promo items vertically */
+        gap: 15px; /* Reduce gap */
+    }
+
+    .promo-item {
+        margin-bottom: 20px; /* Add spacing between promo items */
+    }
+}
+
+@media (max-width: 768px) {
+    .promo-section {
+        width: 80%;
+        padding: 20px 10px; /* Reduce padding */
+    }
+
+    .promo-header h1 {
+        font-size: 1.8rem; /* Further reduce font size */
+    }
+    .promo-text h3 {
+        color: #01497c;
+    }
+    .promo-header p {
+        font-size: 0.8rem; /* Further reduce font size */
+    }
+
+    .promo-grid {
+        grid-template-columns: 1fr; /* Keep promo items stacked */
+        gap: 10px; /* Further reduce gap */
+    }
+
+    .promo-text {
+       
+        background-color: rgba(0, 0, 0, 0);
+       
+    }
+
+    .promo-text {
+        padding: 15px; /* Reduce padding for text */
+    }
+
+    .promo-text h3 {
+        font-size: 1.3rem; /* Reduce font size */
+    }
+
+    .promo-text a {
+        font-size: 0.9rem; /* Reduce font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .promo-section {
+       
+        padding: 10px 5px; /* Minimal padding */
+    }
+
+    .promo-header h1 {
+        font-size: 1.5rem; /* Further reduce font size */
+    }
+   
+    .promo-header p {
+        font-size: 0.7rem; /* Further reduce font size */
+    }
+
+    .promo-grid {
+        gap: 5px; /* Minimal gap */
+    }
+
+    .promo-text {
+        padding: 10px; /* Minimal padding for text */
+    }
+
+    .promo-text h3 {
+        font-size: 1.1rem; /* Further reduce font size */
+    }
+
+    .promo-text a {
+        font-size: 0.8rem; /* Further reduce font size */
+    }
+}

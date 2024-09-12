@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart</title>
+  <link rel="icon" href="../site-image/reuse/osas-tab.ico" type="image/x-icon">
+  <link rel="stylesheet" href="cart.css">
+    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../landing/home.css">
+  <link rel="stylesheet" href="../landing/user-pop.css">
+  <link rel="stylesheet" href="../pop-up/pop-up.css">
+  <link rel="stylesheet" href="../search-pop/search-pop.css">
+  <link rel="stylesheet" href="../search-pop/search-pop2.css">
+</head>
+<body>
+
+
+<!-- Header -->
+<header>
+    <div class="header-top">
+        <button id="menu-button" class="menu-button">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="logo">
+            <h2><span class="big-letter">Ꭷ</span>sas 𝔾lobal</h2> <!-- Replace this with your logo image if needed -->
+        </div>
+        
+        <nav class="navbar">
+            <ul>
+                <li><a href="../">Home</a></li>
+                <li><a href="/shop">Shop</a></li>
+                <li><a href="/our-products">Product</a></li> <!-- Updated link -->
+                <li><a href="/contact-us">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <i class="fas fa-search search-icon"></i>
+            <div class="user-acts">
+
+                <h4>  <i class="fas fa-user user-icon"></i>User</h4>
+            </div>
+          
+        
+            <div>
+                <a href="/cart">
+                    <i class="fas fa-shopping-cart cart-icon"></i>
+                    <span class="cart-badge">0</span> 
+                </a>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+
+
+  <div class="cart-container">
+    <h1>Your cart items</h1>
+    <a href="/shop" class="back-to-shopping">Back to shopping</a>
+
+    <div class="cart-items">
+      <!-- Cart items will be inserted here by JavaScript -->
+    </div>
+
+    <div class="cart-summary">
+      <div class="subtotal">
+        <span>Sub-total</span>
+        <span class="subtotal-price">$0.00</span>
+      </div>
+      <button class="checkout-btn" disabled>Checkout</button>
+
+    </div>
+  </div>
+
+  <script src="cart.js"></script>
+  <script src="../landing/home.js"></script>
+  <script src="../landing/mainmenu.js"></script>
+  <script src="../landing/user-pop.js"></script>
+  <script src="../pop-up/pop-up.js"></script>
+  <script src="../search-pop/search-pop.js"></script>
+  <script src="../search-pop/search-pop2.js"></script>
+</body>
+</html>

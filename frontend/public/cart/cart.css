@@ -1,0 +1,209 @@
+.cart-container {
+    width: 80vw;
+}
+.cart-container h1 {
+    color: #013a63; 
+}
+.cart-items {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr; /* Adjust this for the number of columns you need */
+    gap: 20px; /* Add space between the columns */
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0; /* Changed border color */
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: contents; /* Allow grid children to be displayed in the same grid */
+    padding: 10px 0;
+    border-top: 1px solid #e0e0e0; /* Changed border color */
+}
+
+.product {
+    display: flex;
+    align-items: center;
+}
+
+.product-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    display: block;
+    object-fit: contain;
+    border: 1px solid #ffffff00;
+    border-radius: 20px;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-name {
+    font-weight: bold;
+    color: #013a63; /* Changed text color */
+    max-width: 300px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+
+.remove-item {
+    color: rgb(255, 0, 0);
+  
+    font-size: 12px;
+    font-weight: bold;
+    width: max-content;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none; /* Removes the underline */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.remove-item:hover {
+    background-color: #abaaaa;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Increases the shadow on hover */
+}
+
+
+.price, .quantity, .total {
+    text-align: center;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity-btn {
+    background-color: #013a63; /* Changed button background */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.quantity-btn:hover {
+    background-color: #006ebd; /* Changed hover background color */
+}
+
+.quantity-btn:active {
+    transform: scale(0.95);
+}
+
+.quantity-number {
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #2a6f97; /* Changed text color */
+}
+
+.cart-summary {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.subtotal {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: #013a63; /* Changed text color */
+}
+
+.checkout-btn {
+    background-color: #013a63; /* Changed button background */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.checkout-btn:hover {
+    background-color: #006ebd; /* Changed hover background color */
+}
+
+/* Style for disabled button */
+.checkout-btn:disabled {
+    background-color: #cccccc; /* Gray background when disabled */
+    color: #666666; /* Lighter text color when disabled */
+    cursor: not-allowed; /* Show 'not allowed' cursor when disabled */
+    opacity: 0.6; /* Reduce opacity to show it's inactive */
+}
+
+.back-to-shopping {
+    display: inline-block;
+    background-color: #013a63; /* Changed button background */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.back-to-shopping:hover {
+    background-color: #006ebd; /* Changed hover background color */
+    text-decoration: none;
+}
+/* For screens less than 480px (small phones) */
+@media (max-width: 480px) {
+    .cart-items {
+     
+        gap: 5px;
+     
+    }
+    .cart-container {
+        width: 95vw;
+    }
+    .cart-container h1 {
+      
+        font-size: 6vw;
+    }
+    .product-image {
+        width: 40px;
+        height: 40px;
+    
+    }
+    .product-name {
+      
+        font-size: 2.3vw;
+        max-width: 20vw;
+    }
+    .price, .quantity, .total {
+      
+        font-size: 2vw;
+    }
+    .quantity-btn {
+        padding: 2px 5px;
+
+        font-size: 3vw;
+    }
+    .quantity-number {
+      
+        font-size: 3.5vw;
+     
+    }
+    .back-to-shopping {
+      
+        font-size: 3vw;
+    }
+    .remove-item {
+    
+        font-size: 2vw;
+        padding: 2px 4px;
+    }
+}

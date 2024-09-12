@@ -1,0 +1,163 @@
+.Shop-promo-container {
+    background-image: url('../site-image/shop/Blurred-vision.webp');
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    width: 90%;
+    max-width: 900px;
+    height: 200px;
+    margin-top: 30px;
+    overflow: visible;
+    flex-direction: column;
+    justify-content: center;
+}
+.Shop-promo-text {
+    flex: 1;
+   
+    border-radius: 20px;
+    text-align: left; /* Align text to the left for better readability */
+    padding-left: 20px; /* Add padding to separate text from the image */
+}
+
+.Shop-promo-text h2 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow with some blur */
+}
+
+.Shop-promo-text h4 {
+    color: #ffffff;
+    font-size: 14px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Lighter shadow */
+}
+
+
+.btn {
+    padding: 12px 24px; /* Slightly larger padding for a more prominent look */
+    background-color: #01497c;
+    background-image: linear-gradient(45deg, #01497c, #0373c3); /* Gradient background */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px; /* Smoother, more rounded edges */
+    transition: all 0.3s ease;
+    display: inline-block;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    font-weight: bold; /* Make the text bolder */
+    letter-spacing: 0.5px; /* Slightly more spacing between letters */
+}
+
+.btn:hover {
+    background-color: #0373c3;
+    background-image: linear-gradient(45deg, #0373c3, #49a1ed); /* Brighter gradient on hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+
+.Shop-promo-image {
+    height: 279px; /* Increase the height to make the image larger */
+    margin-right: 20px; /* Space between image and text */
+    object-fit: contain; /* Ensure the image scales properly */
+    border-radius: 10px; /* Optional: rounded corners for a smoother look */
+    position: absolute; /* Allows the image to be positioned outside the container */
+    left: 0px; /* Adjusts how much the image protrudes from the container */
+    bottom: 0px;
+    z-index: 1; /* Ensures the image stays on top of the container */
+}
+/* Responsive Styles */
+@media (max-width: 868px) { /* Tablet screens */
+    .Shop-promo-container {
+   
+        width: 90%;
+     
+        height: 160px;
+   
+    }
+    .Shop-promo-image {
+        height: 115%;
+    }
+
+    .Shop-promo-text h2 {
+       
+        font-size: 4.5vw;
+        margin-bottom: 0px;
+    }
+    .Shop-promo-text h4 {
+        
+        font-size: 7px;
+        font-size: 2.2vw;
+        max-width: 300px;
+        margin-top: 7px;
+        margin-bottom: 8px;
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* Limits text to 2 lines */
+        -webkit-box-orient: vertical;
+        white-space: normal; /* Ensures text wraps to the next line within the max-width */
+    }
+    
+    .btn {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 480px) { /* Mobile screens */
+    .Shop-promo-container {
+   
+        width: 90%;
+     
+        height: 106px;
+   
+    }
+    .Shop-promo-image {
+        height: 115%;
+    }
+
+.Shop-promo-text {
+    margin-left: 35vw;
+}
+    .Shop-promo-text h2 {
+       
+        font-size: 4vw;
+        margin-bottom: 0px;
+    }
+    .Shop-promo-text h4 {
+        
+        font-size: 7px;
+        font-size: 2.2vw;
+        max-width: 200px;
+        margin-top: 7px;
+        margin-bottom: 8px;
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* Limits text to 2 lines */
+        -webkit-box-orient: vertical;
+        white-space: normal; /* Ensures text wraps to the next line within the max-width */
+    }
+    
+    .btn {
+        font-size: 3vw;
+    }
+}
+
+
+
+
+.deals-area {
+    margin: 0px 0 !important;
+  
+}
+
+.shop-collection {
+    
+    width: 90%;
+}

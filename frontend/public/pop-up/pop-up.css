@@ -1,0 +1,140 @@
+.pop-up-menu {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 270px;
+    height: calc(100% - 40px);
+    background-color: white;
+    color: #333;
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%);
+    border-radius: 10px;
+    overflow: hidden; /* Prevent overflow outside the pop-up */
+}
+
+.pop-up-menu.visible {
+    display: flex;
+    transform: translateX(0);
+}
+
+.pop-up-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Custom Scrollbar for Pop-Up Menu */
+.pop-up-menu ul::-webkit-scrollbar {
+    width: 3px;
+}
+
+
+.pop-up-menu ul li {
+    margin: 20px 0;
+}
+
+.pop-up-menu ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.pop-up-menu ul li a:hover {
+    text-decoration: underline;
+}
+
+.products-dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #f9f9f9;
+    z-index: 1001;
+    padding: 10px;
+    width: 200px;
+    border-radius: 4px;
+    position: relative;
+    left: 0;
+    max-height: 300px; /* Set a maximum height to make it scrollable */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+.dropdown-content ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* Custom Scrollbar for Dropdown Content */
+
+.dropdown-content ul li {
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    background-color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content ul li:hover {
+    background-color: #e2e2e2;
+}
+
+.dropdown-content ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.dropdown-content ul li a:hover {
+    text-decoration: underline;
+}
+
+.scrollable {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .pop-up-menu {
+        width: 75vw;
+    }
+}
+/* Footer area inside pop-up menu */
+.pop-up-footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-top: 1px solid #e2e2e2;
+}
+
+.pop-up-footer a {
+    color: #333;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.pop-up-footer a:hover {
+    color: #000;
+}
+.pop-up-logo {
+    display: block;
+    margin: 0 auto 20px auto; /* Center the logo horizontally and add bottom margin */
+    width: 100px; /* Adjust the size as needed */
+    height: auto;
+}

@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../site-image/reuse/osas-tab.ico" type="image/x-icon">
+    <title>Product - Osas Global</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="product-page.css">
+    <link rel="stylesheet" href="../landing/home.css">
+    <link rel="stylesheet" href="../landing/user-pop.css">
+    <link rel="stylesheet" href="../pop-up/pop-up.css">
+    <link rel="stylesheet" href="../search-pop/search-pop.css">
+    <link rel="stylesheet" href="../search-pop/search-pop2.css">
+    <link rel="stylesheet" href="../join-up/join-up.css">
+</head>
+<body>
+    
+
+<!-- Header -->
+<header>
+    <div class="header-top">
+        <button id="menu-button" class="menu-button">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="logo">
+            <h2><span class="big-letter">Ꭷ</span>sas 𝔾lobal</h2> <!-- Replace this with your logo image if needed -->
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../">Home</a></li>
+                <li><a href="/shop">Shop</a></li>
+                <li><a href="/our-products">Product</a></li> <!-- Updated link -->
+                <li><a href="/contact-us">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <i class="fas fa-search search-icon"></i>
+            <div class="user-acts">
+
+                <h4>  <i class="fas fa-user user-icon"></i>User</h4>
+            </div>
+        
+            <div>
+                <a href="/cart">
+                    <i class="fas fa-shopping-cart cart-icon"></i>
+                    <span class="cart-badge">0</span> 
+                </a>
+            </div>
+            
+        
+        </div>
+    </div>
+</header>
+
+
+<div class="product-container">
+    <!-- Product Image Gallery -->
+    <div class="product-image-gallery">
+      
+        <div class="thumbnail-gallery">
+           
+        </div>
+        <img id="product-image" class="main-image">
+    </div>
+    
+
+
+  <!-- Product Details Section -->
+<div class="product-details">
+    <h1 id="product-name">Product Name</h1>
+    <p id="product-model">Model: Model Number</p>
+    <p id="product-availability">Availability: In Stock</p>
+    <h2 id="product-price">₦0.00</h2>
+    <p id="product-description">Product description goes here.</p>
+
+    
+
+    <div class="quantity-selector">
+        <button type="button" id="decrease-quantity" aria-label="Decrease quantity">-</button>
+        <input type="number" id="quantity" name="quantity" min="1" value="1" aria-label="Product quantity">
+        <button type="button" id="increase-quantity" aria-label="Increase quantity">+</button>
+    </div>
+
+    <button class="add-to-cart">Add to Cart</button>
+</div>
+
+</div>
+
+<!-- Tab Buttons -->
+<div class="tabs">
+    <button class="tab-button active" data-tab="details">Product Details</button>
+    <button class="tab-button" data-tab="specifications">Specification</button> <!-- Notice the ID is plural here -->
+</div>
+
+<!-- Tab Panes -->
+<div class="tab-content">
+    <div id="details" class="tab-pane active">
+        <!-- Product details content -->
+    </div>
+    <div id="specifications" class="tab-pane"> <!-- The ID must match 'specifications' -->
+        <!-- Specification content -->
+    </div>
+</div>
+
+
+<!-- Error message -->
+<div id="error-message" style="color: red;"></div>
+
+<script src="product-page.js"></script>
+<script src="product-page2.js"></script>
+<script src="../landing/home.js"></script>
+<script src="../landing/user-pop.js"></script>
+    <script src="../pop-up/pop-up.js"></script>
+    <script src="../search-pop/search-pop.js"></script>
+    <script src="../search-pop/search-pop2.js"></script>
+    <script src="../join-up/join-up.js"></script>
+    <script src="../cart/cart2.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+/* complete.css */
+
+
+
+.container {
+    width: 80vw;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Added border-radius for a smoother look */
+}
+
+h1 {
+    text-align: center;
+    color: #013a63; /* Changed to the same primary color from checkout */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.order-summary {
+    margin-top: 20px;
+}
+
+.order-summary h2 {
+    border-bottom: 2px solid #2a6f97; /* Adjusted to match the 'checkout.css' primary color */
+    padding-bottom: 10px;
+    color: #013a63;
+    font-size: 1.5rem;
+}
+
+.order-info p,
+.order-info ul {
+    margin: 10px 0;
+    color: #013a63; /* Unified color */
+}
+
+.order-info ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.order-info ul li {
+    margin: 5px 0;
+    color: #777; /* Secondary color for item details */
+}
+
+.order-info p strong {
+    font-weight: bold;
+    color: #013a63; /* Primary color for strong elements */
+}
+
+#total-price {
+    color: #2a6f97;
+    font-weight: bold;
+}
+
+.back-to-shop {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #013a63; /* Using the same button color */
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-to-shop:hover {
+    background-color: #006ebd; /* Button hover effect */
+    transform: scale(1.05);
+}
+
+.back-to-shop:active {
+    transform: scale(0.95); /* Shrink on click */
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+    .container {
+        width: 90vw;
+    }
+
+    h1 {
+        font-size: 6vw;
+    }
+
+    .order-summary h2 {
+        font-size: 5vw;
+    }
+
+    .back-to-shop {
+        font-size: 4vw;
+    }
+}

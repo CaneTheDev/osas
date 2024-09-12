@@ -1,0 +1,215 @@
+.about-us {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.about-section {
+    margin-bottom: 3rem;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 0.75rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h1, 
+.about-section h2 {
+    font-size: 1.6rem;
+    color: #222;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.75px;
+}
+
+.about-section p {
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.about-section img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+}
+
+blockquote {
+    font-style: italic;
+    background-color: #fafafa;
+    padding: 1.25rem;
+    border-left: 3px solid #007bff;
+    margin-top: 1.5rem;
+    border-radius: 8px;
+    color: #444;
+}
+
+.extra-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.about-section-bottom {
+    display: flex;
+    justify-content: space-around;
+   
+    
+}
+
+.info-card {
+    background-color: white;
+    color: #000;
+    padding: 1.5rem;
+    flex: 1;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+    max-width: 250px;
+    margin: 0 0.75rem;
+}
+
+.info-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+}
+
+.info-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.info-card p {
+    font-size: 0.5rem;
+    color: #666;
+    opacity: 0.9;
+}
+
+.icon-container {
+    background-color: #007bff;
+    border-radius: 50%;
+    padding: 0.75rem;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    color: white; /* Font Awesome icon color */
+}
+
+.icon-container i {
+    font-size: 1.6rem; /* Adjust size of Font Awesome icons */
+}
+.contact-details a{
+text-decoration: dashed;
+}
+.contact-details a:hover{
+    text-decoration: underline;
+    }
+/* Osas Global Section */
+.osas-global-section h2 {
+    font-size: 2rem;
+    color: #1a73e8;
+    margin-bottom: 1.25rem;
+    font-weight: 600;
+}
+
+.osas-global-section p {
+    color: #444;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.osas-global-section img {
+    width: 55%;
+    height: auto;
+    border-radius: 0px;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.05);
+    filter: drop-shadow(45px 18px 5px rgba(0, 0, 0, 0.5));
+}
+/* Base styles (already optimized for larger screens) */
+/* Add responsive styling below for smaller screens */
+
+
+/* Responsive styles for phones */
+@media (max-width: 480px) {
+    .about-section {
+        padding: 1rem;
+        gap: 10px;
+    }
+
+    .about-section h1, .about-section h2 {
+        font-size: 5vw;
+    }
+    h3 {
+       
+        font-size: 3vw;
+    }
+    .about-section p {
+        font-size: 3vw;
+    }
+
+    .about-section img {
+        width: 100%;
+    }
+
+    .info-card {
+        max-width: 250px;
+        padding: 1rem;
+    }
+
+    .info-card h3 {
+        font-size: 0.8rem;
+    }
+
+    .info-card p {
+        font-size: 0.5rem;
+    }
+
+    .osas-global-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .osas-global-section p {
+        font-size: 2.7vw;
+    }
+
+    .osas-global-section img {
+        width: 80%;
+        filter: drop-shadow(20px 8px 3px rgba(0, 0, 0, 0.3));
+    }
+
+    .about-section-bottom {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+        width: 100%;
+    }
+    blockquote {
+     
+        font-size: 3vw;
+        margin: -5px;
+    }
+    .icon-container {
+       
+        width: 30px;
+        height: 30px;
+        
+    }
+}

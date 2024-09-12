@@ -1,0 +1,115 @@
+/* Reuse styles from product-page.css for consistency */
+
+/* Ensure the container displays items in a flex layout */
+.product-container {
+    display: flex;
+    width: 90%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+/* Apply the same styles to the admin image gallery */
+.product-image-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 20px;
+}
+
+.main-image {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    border: 1px solid #ffffff00;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.thumbnail-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 110px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.thumbnail {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #012a4a00;
+    cursor: pointer;
+    object-fit: contain;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.thumbnail:hover {
+    border-color: #ff6600;
+}
+
+/* Style the form groups to match product details */
+.product-details {
+    flex: 2;
+    padding: 20px;
+    max-width: 46%;
+}
+
+.product-details h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #01497c;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #888;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.add-to-cart {
+    background-color: #013a63;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #035fa0;
+}
+.main-image-preview {
+    max-width: 200px;
+    margin-top: 10px;
+}
+
+.extra-image-preview {
+    max-width: 100px;
+    margin: 5px;
+}

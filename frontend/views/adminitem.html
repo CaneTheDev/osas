@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Item Details</title>
+    
+    <!-- Reuse similar font styles and icon styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../component/adminitem/adminitem.css">
+    <link rel="stylesheet" href="../public/product-page/product-page.css">
+    <link rel="stylesheet" href="../landing/home.css"><!-- Link product page CSS -->
+</head>
+<body>
+    <div class="product-container">
+        <div class="product-image-gallery">
+            <div class="thumbnail-gallery" id="extra-images-container">
+                <!-- Thumbnails of uploaded images will appear here -->
+            </div>
+            <img id="admin-main-image" class="main-image" src="#" alt="Item Image">
+        </div>
+
+        <div class="product-details">
+            <h1 id="admin-item-name">Item Details</h1>
+
+            <form id="item-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="price">Price:</label>
+                    <input type="number" id="price" name="price">
+                </div>
+                <div class="form-group">
+                    <label for="availability">Availability:</label>
+                    <select id="availability" name="availability">
+                        <option value="true">In Stock</option>
+                        <option value="false">Out of Stock</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="tags-select">Tags:</label>
+                    <select id="tags-select" name="tags" multiple class="form-control">
+                        <!-- Options will be populated dynamically via JavaScript -->
+                    </select>
+                </div>
+        
+           
+                
+                <div class="form-group">
+                    <label for="category">Category:</label>
+                    <input type="text" id="category" name="category">
+                </div>
+                <div class="form-group">
+                    <label for="productDescription">Product Description:</label>
+                    <textarea id="productDescription" name="productDescription"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="productModel">Product Model:</label>
+                    <input type="text" id="productModel" name="productModel">
+                </div>
+                <div class="form-group">
+                    <label for="productSpecification">Product Specification:</label>
+                    <textarea id="productSpecification" name="productSpecification"></textarea>
+                </div>
+                <div class="actions">
+                    <button type="button" id="commit-btn" class="add-to-cart">Commit</button>
+                    <button type="button" id="cancel-btn" class="add-to-cart">Cancel</button>
+                    <button type="button" id="delete-btn" class="add-to-cart">Delete</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="../component/adminitem/adminitem.js"></script>
+    <script src="../component/adminitem/adminitem2.js"></script>
+</body>
+</html>

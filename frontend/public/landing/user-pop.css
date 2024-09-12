@@ -1,0 +1,102 @@
+.user-popup-menu {
+    position: absolute;
+    top: 50px; /* Adjust based on the position of your user icon */
+    right: 90px; /* Adjust as needed */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px; /* Add rounded corners for a softer look */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Stronger shadow for better elevation */
+    padding: 15px;
+    z-index: 1000;
+    display: none;
+    width: 200px; /* Fixed width for consistency */
+}
+
+.user-popup-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.user-popup-menu ul li {
+    padding: 12px 0; /* Slightly increased padding for better spacing */
+    border-bottom: 1px solid #eee; /* Divider between list items */
+}
+
+.user-popup-menu ul li:last-child {
+    border-bottom: none; /* Remove border from the last item */
+}
+
+.user-popup-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500; /* Slightly bolder text for better readability */
+    display: block; /* Make the entire list item clickable */
+    padding: 5px;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.user-popup-menu ul li a:hover {
+    background-color: #f7f7f7; /* Change background color on hover */
+}
+
+.user-actions h4 {
+    font-size: 1vw; /* Scalable font size */
+    color: #012a4a;
+    margin: 0px;
+    max-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 600; /* Bold text for emphasis */
+}
+
+/* Additional styling to improve overall UX */
+.user-popup-menu::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    border-width: 0 10px 10px 10px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+    z-index: 1; /* Arrow for better indication */
+}
+
+
+.user-acts {
+    cursor: pointer;
+    padding: 10px;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); /* Initial box shadow */
+}
+
+.user-acts:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+@media (max-width: 480px) {
+    .user-actions h4 {
+        font-size: 3.5vw;
+        max-width: 90px;
+
+        margin: 0px;
+    }
+    .user-popup-menu {
+  
+        width: 40vw;
+        right: 50px; /* Adjust as needed */
+  
+    }
+    .user-acts {
+        padding: 10px;
+    }
+    .search-icon, .user-icon, .cart-icon {
+        font-size: 15px;
+     
+    }
+
+}

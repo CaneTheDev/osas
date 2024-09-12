@@ -1,0 +1,300 @@
+.checkout-container {
+    width: 80vw;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.checkout-container h1 {
+    color: #013a63;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.checkout-items {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Product and price */
+    gap: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.checkout-item {
+    display: contents; /* Make each checkout item fill the grid */
+    padding: 10px 0;
+    border-top: 1px solid #e0e0e0;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+}
+
+.product-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    object-fit: contain;
+    border: 1px solid #ffffff00;
+    border-radius: 20px;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-name {
+    font-weight: bold;
+    color: #013a63;
+    max-width: 300px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product-quantity {
+    font-size: 14px;
+    color: #777;
+}
+
+.price {
+    text-align: right;
+    color: #2a6f97;
+    font-size: 16px;
+}
+
+.shipping-methods h2, .contact-info h2, .checkout-summary .subtotal, .shipping, .total {
+    color: #013a63;
+}
+
+.shipping-option {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.shipping-option label {
+    font-weight: bold;
+    color: #013a63;
+}
+
+.shipping-option span {
+    color: #2a6f97;
+}
+
+.shipping-details, .pickup-details {
+    display: none;
+    margin-top: 10px;
+}
+
+.shipping-details h3, .pickup-details h3 {
+    color: #013a63;
+    font-size: 1.2rem;
+}
+
+.shipping-details input, .pickup-details select {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+}
+/* Style for the pickup details input fields */
+.pickup-details input[type="text"],
+.pickup-details input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #013a63;
+    box-sizing: border-box;
+}
+
+.pickup-details input[type="text"]:focus,
+.pickup-details input[type="email"]:focus {
+    outline: none;
+    border-color: #2a6f97; /* Blue border on focus */
+    box-shadow: 0 0 5px rgba(42, 111, 151, 0.5); /* Subtle glow on focus */
+}
+
+.contact-info {
+    margin-top: 30px;
+}
+
+.info-box {
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.info-item {
+    margin-bottom: 10px;
+}
+
+.info-item span:first-child {
+    font-weight: bold;
+    color: #013a63;
+    margin-right: 10px;
+}
+
+
+.whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #25D366; /* WhatsApp green */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.whatsapp-button i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.whatsapp-button:hover {
+    background-color: #1ebe57; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.whatsapp-button:active {
+    transform: scale(0.95); /* Shrink on click */
+}
+
+.checkout-summary {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.subtotal, .shipping, .total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.total {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.place-order-btn {
+    background-color: #013a63;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.place-order-btn:hover {
+    background-color: #006ebd;
+}
+
+.place-order-btn:active {
+    transform: scale(0.95);
+}
+/* Style for disabled button */
+.place-order-btn:disabled {
+    background-color: #cccccc; /* Gray background when disabled */
+    color: #666666; /* Lighter text color when disabled */
+    cursor: not-allowed; /* Show 'not allowed' cursor when disabled */
+    opacity: 0.6; /* Reduce opacity to show it's inactive */
+}
+
+/* For screens less than 480px (small phones) */
+@media (max-width: 480px) {
+    .checkout-container {
+        width: 90vw;
+    }
+    .shipping-methods {
+        width: 90vw;
+    }
+    .shipping-methods h2, .contact-info h2, .checkout-summary .subtotal, .shipping, .total {
+       
+        font-size: 4vw;
+    }
+    .checkout-container h1 {
+        font-size: 6vw;
+    }
+    .shipping-option label {
+      
+        font-size: 4vw;
+    }
+    .shipping-option span {
+       
+        font-size: 2.5vw;
+    }
+    .shipping-details h3, .pickup-details h3 {
+     
+        font-size: 4vw;
+    }
+  
+    .product-image {
+        width: 40px;
+        height: 40px;
+    }
+
+    .product-name {
+        font-size: 2.3vw;
+    }
+
+    .price {
+        font-size: 2.5vw;
+    }
+
+    .place-order-btn {
+        font-size: 4vw;
+    }
+    .info-item span:first-child {
+
+        font-size: 3vw;
+    }
+    span {
+        font-size: 3vw;
+    }
+    .whatsapp-button {
+       
+        padding: 5px 10px;
+       
+        font-size: 2.5vw;
+    }
+    label {
+        font-size: 4vw;
+    }
+    .pickup-details input[type="text"], .pickup-details input[type="email"] {
+     
+        font-size: 4vw;
+   
+    }
+    .Pick-up-Date input[type="date"] {
+
+        font-size: 4vw;
+   
+    }
+}
+/* Style for disabled shipping option */
+.disabled-option {
+    color: #999999; /* Gray out the text */
+}
+
+.disabled-option input[type="radio"] {
+    cursor: not-allowed; /* Show not-allowed cursor */
+}
+
+.disabled-option label {
+    color: #999999; /* Gray out the label */
+}
+
+.disabled-option span {
+    color: #999999; /* Gray out the price */
+}

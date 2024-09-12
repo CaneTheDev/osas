@@ -1,0 +1,196 @@
+/* General styling for the search pop-up */
+.search-pop-up {
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    background-color: #f9f9f9;
+    color: #333;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.search-pop-up.visible {
+    display: flex;
+}
+
+.search-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.search-input {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+.search-close {
+    position: absolute;
+    right: 0;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.search-close:hover {
+    color: #000;
+}
+
+.main-menu {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #555;
+}
+
+.main-menu h2 {
+    font-size: 14px;
+    font-weight: normal;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.main-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.main-menu ul li {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.suggested-products {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    width: 100%;
+    text-align: left;
+}
+
+.suggested-products li {
+    padding: 10px 0;
+}
+
+.suggested-products li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.suggested-products li a:hover {
+    color: #000;
+}
+
+.loading-spinner {
+    border: 4px solid rgba(54, 54, 54, 0.1);
+    border-top: 4px solid #061662;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive styles */
+
+/* For tablets (screen width between 600px and 900px) */
+@media (max-width: 900px) {
+    .search-pop-up {
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        height: 85%;
+        padding: 15px;
+    }
+
+    .search-input {
+        font-size: 18px;
+    }
+
+    .search-close {
+        font-size: 22px;
+    }
+
+    .main-menu {
+        font-size: 16px;
+    }
+
+    .main-menu ul li {
+        font-size: 18px;
+    }
+
+    .suggested-products li a {
+        font-size: 16px;
+    }
+}
+
+/* For phones (screen width less than 600px) */
+@media (max-width: 600px) {
+    .search-pop-up {
+        top: 5%;
+        left: 5%;
+        width: 85%;
+        height: 85%;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .search-input {
+        width: 85%;
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .search-close {
+        font-size: 20px;
+    }
+
+    .main-menu {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+
+    .main-menu ul li {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .suggested-products li a {
+        font-size: 14px;
+    }
+
+    .loading-spinner {
+        width: 25px;
+        height: 25px;
+        border-width: 3px;
+    }
+}

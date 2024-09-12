@@ -1,0 +1,62 @@
+/* Carousel-2 Container */
+.carousel-2-container {
+    position: relative;
+    width: 90vw; /* 90% of the viewport width */
+    overflow: hidden;
+    margin: 20px auto; /* Center the carousel horizontally */
+    border-radius: 15px; /* Round the corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for better aesthetics */
+}
+
+/* carousel-2-slide */
+.carousel-2-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    border-radius: 15px; /* Round the corners of the slides */
+}
+
+.carousel-2-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+    flex: 0 0 100%; /* Ensure each image takes up 100% of the container width */
+    border-radius: 15px; /* Ensure images also have rounded corners */
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .carousel-2-container {
+        width: 100%; /* Increase width slightly for smaller screens */
+        border-radius: 10px; /* Reduce border radius */
+        margin: 15px auto; /* Reduce vertical margin */
+    }
+
+    .carousel-2-slide img {
+        border-radius: 10px; /* Adjust image corners */
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-2-container {
+        width: 90%; /* Full width for tablet screens */
+        border-radius: 8px; /* Further reduce border radius */
+        margin: 10px auto; /* Further reduce margin */
+    }
+
+    .carousel-2-slide img {
+        border-radius: 8px; /* Adjust image corners */
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-2-container {
+        
+        border-radius: 5px; /* Minimize border radius for compact look */
+        margin: 5px auto; /* Minimize margin */
+    }
+
+    .carousel-2-slide img {
+        border-radius: 5px; /* Adjust image corners */
+    }
+}

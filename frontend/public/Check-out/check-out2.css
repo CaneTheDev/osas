@@ -1,0 +1,37 @@
+.Pick-up-Date {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .Pick-up-Date label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .Pick-up-Date input[type="date"] {
+    width: 90%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+  }
+  
+  .Pick-up-Date input[type="date"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+  }
+  
+  .Pick-up-Date input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+  }
+  
+  .Pick-up-Date input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+  }
+  

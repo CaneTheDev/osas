@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check-out</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../Check-out/check-out.css">
+    <link rel="stylesheet" href="../Check-out/check-out2.css">
+    <link rel="stylesheet" href="../landing/home.css">
+</head>
+<body>
+    <div class="checkout-container">
+        <h1>Checkout</h1>
+
+        <div class="checkout-items">
+            <!-- Checkout items will be inserted here by JavaScript -->
+        </div>
+
+        <div class="shipping-methods">
+            <h2>Shipping method</h2>
+
+       <!-- Standard Shipping Option (Disabled) -->
+<div class="shipping-option disabled-option">
+    <label>
+        <input type="radio" name="shipping" value="standard" disabled>
+        Standard Shipping (Temporarily Unavailable)
+    </label>
+    <span>₦1,000.00</span>
+</div>
+
+            <!-- Pick-up Option -->
+            <div class="shipping-option">
+                <label>
+                    <input type="radio" name="shipping" value="pickup"checked>
+                    Pick Up
+                </label>
+                <span>Free</span>
+            </div>
+
+            <!-- Standard Shipping Form (hidden initially) -->
+            <div class="shipping-details" id="standard-shipping-details">
+                <h3>Delivery Details</h3>
+                <label for="delivery-location">Delivery Address:</label>
+                <input type="text" id="delivery-location" placeholder="Enter your delivery address">
+
+                <label for="recipient-name">Recipient Name:</label>
+                <input type="text" id="recipient-name" placeholder="Enter recipient name">
+
+                <label for="recipient-phone">Recipient Phone Number:</label>
+                <input type="text" id="recipient-phone" placeholder="Enter recipient phone number">
+            </div>
+
+  <!-- Pick-up Location Selection (hidden initially) -->
+<div class="pickup-details" id="pickup-details">
+    <h3>Select Pickup Location</h3>
+    <select id="pickup-location">
+        <option value="ijaye-bus-stop">Ijaye bus stop shopping complex</option>
+        <option value="ijaye-local-gov">Opposite Ijaye local government area compound</option>
+    </select>
+
+    <h3>Contact Information for Pickup</h3>
+    <label for="pickup-phone">Phone Number:</label>
+    <input type="text" id="pickup-phone" placeholder="Enter your phone number">
+
+    <label for="pickup-email">Email Address:</label>
+    <input type="email" id="pickup-email" placeholder="Enter your email address">
+       <!-- Other checkout form fields -->
+       <div class="Pick-up-Date">
+        <label for="pick-up-date">Pick-up Date:</label>
+        <input type="date" id="pick-up-date" name="pickUpDate" required>
+        <span id="date-error" style="color: red; display: none;">Sunday is not available for pick-up. Please select a different day.</span>
+    </div>
+    
+    
+</div>
+
+
+        <div class="contact-info">
+            <h2>Our Contact Information</h2>
+            <div class="info-box">
+                <div class="info-item">
+                    <span>Our Email:</span>
+                    <span>Fawaz@gmail.com</span>
+                </div>
+                <div class="info-item">
+                    <span>Call Us:</span>
+                    <span>07049697710</span>
+                </div>
+                <div class="info-item">
+                    <span>WhatsApp:</span>
+                    <a href="https://wa.me/2347049697710" target="_blank" class="whatsapp-button">
+                        <i class="fab fa-whatsapp"></i> Chat with us on WhatsApp
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="checkout-summary">
+            <div class="subtotal">
+                <span>Sub-total</span>
+                <span class="subtotal-price">₦0.00</span>
+            </div>
+
+            <div class="shipping">
+                <span>Shipping</span>
+                <span class="shipping-price">₦0.00</span>
+            </div>
+
+            <div class="total">
+                <span>Total</span>
+                <span class="total-price">₦0.00</span>
+            </div>
+
+            <button class="place-order-btn" disabled>Place Order</button>
+        </div>
+    </div>
+
+    <script src="../Check-out/check-out.js"></script>
+    
+    <script src="../Check-out/check-out2.js"></script>
+</body>
+</html>

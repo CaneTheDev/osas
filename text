@@ -1,0 +1,118 @@
+-- Charger
+INSERT INTO "Items"(
+    "name", "price", "description", "imageUrl", "category", "tags", "productDetails", 
+    "productModel", "productAvailability", "productSpecification", "createdAt", "updatedAt"
+) VALUES
+( '15 Pro Max 35W Charger (Type C to Type C)', 6000, 'High-speed 35W charger with Type C to Type C connection.', '/image/charger.png', 'Charger', 'limited-offers', 'Type C to Type C, 35W output', '15 Pro Max 35W Charger', true, 'Type C to Type C, 35W output', NOW(), NOW()),
+( 'iPhone USB Type C to Type C 50W Power Adapter', 10000, '50W power adapter with USB Type C to Type C.', '/image/charger.png', 'Charger', 'top-deals', '50W output, Type C to Type C', 'iPhone USB Type C to Type C 50W Adapter', true, '50W output, Type C to Type C', NOW(), NOW()),
+( 'iPhone Charger 2 Pin', 5000, 'Standard 2 pin charger for iPhone.', '/image/charger.png', 'Charger', 'No tag', '2 pin charger, compatible with iPhone', 'iPhone Charger 2 Pin', true, '2 pin charger, compatible with iPhone', NOW(), NOW()),
+( 'iPhone X Charger', 3000, 'Charger specifically designed for iPhone X.', '/image/charger.png', 'Charger', 'No tag', 'Charger for iPhone X', 'iPhone X Charger', true, 'Charger for iPhone X', NOW(), NOW()),
+( 'Ldnio iPhone USB Cable', 3000, 'Durable USB cable for iPhone by Ldnio.', '/image/charger.png', 'Charger', 'top-deals', 'USB cable for iPhone', 'Ldnio iPhone USB Cable', true, 'USB cable for iPhone', NOW(), NOW()),
+( 'Type C to Type C iPhone Cable (1m)', 3000, '1 meter Type C to Type C cable for iPhone.', '/image/charger.png', 'Charger', 'limited-offers', 'Type C to Type C, 1 meter', 'Type C to Type C iPhone Cable (1m)', true, 'Type C to Type C, 1 meter', NOW(), NOW()),
+( 'Type C to Type C iPhone USB Cable (2m)', 3500, '2 meter Type C to Type C USB cable for iPhone.', '/image/charger.png', 'Charger', 'top-deals', 'Type C to Type C, 2 meters', 'Type C to Type C iPhone USB Cable (2m)', true, 'Type C to Type C, 2 meters', NOW(), NOW()),
+( 'Type C to iPhone USB Cable (1m)', 2500, '1 meter Type C to iPhone USB cable.', '/image/charger.png', 'Charger', 'No tag', 'Type C to iPhone, 1 meter', 'Type C to iPhone USB Cable (1m)', true, 'Type C to iPhone, 1 meter', NOW(), NOW()),
+( 'Type C to iPhone USB Cable (2m)', 3500, '2 meter Type C to iPhone USB cable.', '/image/charger.png', 'Charger', 'top-deals', 'Type C to iPhone, 2 meters', 'Type C to iPhone USB Cable (2m)', true, 'Type C to iPhone, 2 meters', NOW(), NOW()),
+( 'Itel Charger 5W', 3000, '5W charger by Itel.', '/image/charger.png', 'Charger', 'No tag', '5W output', 'Itel Charger 5W', true, '5W output', NOW(), NOW()),
+( 'Samsung Travel Adapter', 4000, 'Travel adapter for Samsung devices.', '/image/charger.png', 'Charger', 'top-deals', 'Travel adapter', 'Samsung Travel Adapter', true, 'Travel adapter', NOW(), NOW()),
+( 'M.M.W Fast Charger', 3500, 'Fast charger by M.M.W.', '/image/charger.png', 'Charger', 'limited-offers', 'Fast charging', 'M.M.W Fast Charger', true, 'Fast charging', NOW(), NOW());
+
+-- Earphones
+INSERT INTO "Items"(
+    "name", "price", "description", "imageUrl", "category", "tags", "productDetails", 
+    "productModel", "productAvailability", "productSpecification", "createdAt", "updatedAt"
+) VALUES
+( 'AKG Samsung Earphones', 8000, 'High-quality earphones by AKG for Samsung devices.', '/image/earphones.png', 'Earphone', 'top-deals', 'High-quality sound, comfortable fit', 'AKG Samsung Earphone', true, 'High-quality sound, comfortable fit', NOW(), NOW()),
+( 'AirPods 2', 18000, 'Second generation AirPods with improved sound quality.', '/image/Earphone.png', 'Earphone', 'latest-deals', 'Improved sound quality, wireless', 'AirPods 2', true, 'Improved sound quality, wireless', NOW(), NOW()),
+( 'AirPods 3', 25000, 'Third generation AirPods with advanced features.', '/image/Earphone.png', 'Earphone', 'top-deals', 'Advanced features, wireless', 'AirPods 3', true, 'Advanced features, wireless', NOW(), NOW()),
+( 'AirPods 3 (copy)', 3000, 'Affordable copy of the AirPods 3.', '/image/Earphone.png', 'Earphone', 'No tag', 'Copy of AirPods 3', 'AirPods 3 (copy)', true, 'Copy of AirPods 3', NOW(), NOW()),
+( 'AirPods Pro Original', 25000, 'Original AirPods Pro with active noise cancellation.', '/image/Earphone.png', 'Earphone', 'latest-deals', 'Active noise cancellation, wireless', 'AirPods Pro Original', true, 'Active noise cancellation, wireless', NOW(), NOW()),
+( 'AirPods Pro ANC Original', 25000, 'Original AirPods Pro with advanced noise cancellation.', '/image/Earphone.png', 'Earphone', 'top-deals', 'Advanced noise cancellation, wireless', 'AirPods Pro ANC Original', true, 'Advanced noise cancellation, wireless', NOW(), NOW()),
+( 'AirPods Pro Pouch', 3000, 'Pouch for storing AirPods Pro.', '/image/Earphone.png', 'Earphone', 'accessories', 'Protective pouch for AirPods Pro', 'AirPods Pro Pouch', true, 'Protective pouch for AirPods Pro', NOW(), NOW()),
+( 'New Age In-Ear Headphone', 2000, 'Affordable in-ear headphones with decent sound quality.', '/image/Earphone.png', 'Earphone', 'No tag', 'In-ear, decent sound quality', 'New Age In-Ear Headphones', true, 'In-ear, decent sound quality', NOW(), NOW()),
+( 'Tws BTH-F9-5 True Wireless Earbuds', 8000, 'True wireless earbuds with high sound quality.', '/image/Earphone.png', 'Earphone', 'top-deals', 'True wireless, high sound quality', 'Tws BTH-F9-5 True Wireless Earbuds', true, 'True wireless, high sound quality', NOW(), NOW());
+
+-- Headphones
+INSERT INTO "Items"(
+    "name", "price", "description", "imageUrl", "category", "tags", "productDetails", 
+    "productModel", "productAvailability", "productSpecification", "createdAt", "updatedAt"
+) VALUES
+( 'Bose Headphones 700', 18000, 'Premium Bose headphones with noise cancellation.', '/image/headphones.png', 'Headphone', 'latest-deals', 'Noise cancellation, high-quality sound', 'Bose Headphone 700', true, 'Noise cancellation, high-quality sound', NOW(), NOW()),
+( 'Cat Headphone', 8000, 'Fun and stylish Headphone with cat design.', '/image/Headphone.png', 'Headphone', 'top-deals', 'Stylish design, good sound quality', 'Cat Headphone', true, 'Stylish design, good sound quality', NOW(), NOW()),
+( 'JBL Tune 600BT', 15000, 'Wireless JBL Headphone with deep bass.', '/image/Headphone.png', 'Headphone', 'top-deals', 'Deep bass, wireless', 'JBL Tune 600BT', true, 'Deep bass, wireless', NOW(), NOW()),
+( 'JBL Tune J-09', 12000, 'Affordable JBL Headphone with balanced sound.', '/image/Headphone.png', 'Headphone', 'No tag', 'Balanced sound, comfortable', 'JBL Tune J-09', true, 'Balanced sound, comfortable', NOW(), NOW()),
+( 'JBL By Harman Headphone', 20000, 'Premium JBL Headphone with superior sound quality.', '/image/Headphone.png', 'Headphone', 'latest-deals', 'Superior sound quality, comfortable fit', 'JBL By Harman Headphone', true, 'Superior sound quality, comfortable fit', NOW(), NOW()),
+( 'Sony WH – XB 910N', 15000, 'Sony Headphone with extra bass and noise cancellation.', '/image/Headphone.png', 'Headphone', 'top-deals', 'Extra bass, noise cancellation', 'Sony WH – XB 910N', true, 'Extra bass, noise cancellation', NOW(), NOW()),
+( 'T&G Model TG227', 15000, 'Stylish Headphone with good sound quality.', '/image/Headphone.png', 'Headphone', 'limited-offers', 'Good sound quality, stylish design', 'T&G Model TG227', true, 'Good sound quality, stylish design', NOW(), NOW());
+
+-- Speaker
+INSERT INTO "Items"(
+    "name", "price", "description", "imageUrl", "category", "tags", "productDetails", 
+    "productModel", "productAvailability", "productSpecification", "createdAt", "updatedAt"
+) VALUES
+( 'JBL Charge 5 Original', 200000, 'High-performance portable speaker with long battery life.', '/image/speaker.png', 'Speaker', 'top-deals', 'Long battery life, high performance', 'JBL Charge 5 Original', true, 'Long battery life, high performance', NOW(), NOW()),
+( 'JBL Charge 4 Copy', 25000, 'Affordable copy of the JBL Charge 4.', '/image/speaker.png', 'Speaker', 'No tag', 'Copy of JBL Charge 4', 'JBL Charge 4 Copy', true, 'Copy of JBL Charge 4', NOW(), NOW()),
+( 'JBL Clip 4 Copy', 25000, 'Copy of the compact JBL Clip 4 speaker.', '/image/speaker.png', 'Speaker', 'No tag', 'Copy of JBL Clip 4', 'JBL Clip 4 Copy', true, 'Copy of JBL Clip 4', NOW(), NOW()),
+( 'JBL Clip 4 Original', 65000, 'Original compact JBL Clip 4 speaker with good sound quality.', '/image/speaker.png', 'Speaker', 'latest-deals', 'Compact size, good sound quality', 'JBL Clip 4 Original', true, 'Compact size, good sound quality', NOW(), NOW()),
+( 'JBL Flip 6 Dubai', 30000, 'JBL Flip 6 speaker, Dubai edition.', '/image/speaker.png', 'Speaker', 'top-deals', 'Dubai edition', 'JBL Flip 6 Dubai', true, 'Dubai edition', NOW(), NOW()),
+( 'JBL Flip 5 Original', 120000, 'Original JBL Flip 5 speaker with powerful sound.', '/image/speaker.png', 'Speaker', 'latest-deals', 'Powerful sound, durable', 'JBL Flip 5 Original', true, 'Powerful sound, durable', NOW(), NOW()),
+( 'JBL IBS Speaker', 12000, 'Affordable JBL IBS speaker with decent performance.', '/image/speaker.png', 'Speaker', 'No tag', 'Decent performance', 'JBL IBS Speaker', true, 'Decent performance', NOW(), NOW()),
+( 'S812', 12000, 'Portable speaker with clear sound quality.', '/image/speaker.png', 'Speaker', 'top-deals', 'Clear sound quality', 'S812', true, 'Clear sound quality', NOW(), NOW());
+
+-- Microphones
+INSERT INTO "Items"(
+    "name", "price", "description", "imageUrl", "category", "tags", "productDetails", 
+    "productModel", "productAvailability", "productSpecification", "createdAt", "updatedAt"
+) VALUES
+( 'K11 Wireless Microphone', 13000, 'Wireless microphone with clear sound.', '/image/microphone.png', 'Microphone', 'top-deals', 'Wireless, clear sound', 'K11 Wireless Microphone', true, 'Wireless, clear sound', NOW(), NOW()),
+( 'K35 Wireless Microphone', 13000, 'Wireless microphone with good range.', '/image/microphone.png', 'Microphone', 'top-deals', 'Good range, wireless', 'K35 Wireless Microphone', true, 'Good range, wireless', NOW(), NOW()),
+( 'K8 Wireless Microphone', 13000, 'Reliable wireless microphone with clear audio.', '/image/microphone.png', 'Microphone', 'top-deals', 'Clear audio, reliable', 'K8 Wireless Microphone', true, 'Clear audio, reliable', NOW(), NOW()),
+( 'K9 Wireless Microphone', 13000, 'High-quality wireless microphone.', '/image/microphone.png', 'Microphone', 'top-deals', 'High-quality, wireless', 'K9 Wireless Microphone', true, 'High-quality, wireless', NOW(), NOW()),
+( 'Koleer S918', 11000, 'Koleer wireless microphone with good performance.', '/image/microphone.png', 'Microphone', 'No tag', 'Good performance, wireless', 'Koleer S918', true, 'Good performance, wireless', NOW(), NOW());
+
+-- Direct Earpiece
+INSERT INTO "Items"(
+    "name", "price", "description", "imageUrl", "category", "tags", "productDetails", 
+    "productModel", "productAvailability", "productSpecification", "createdAt", "updatedAt"
+) VALUES
+( 'iPhone Bluetooth Earpiece', 2500, 'Bluetooth earpiece for iPhone.', '/image/earpiece.png', 'Direct Earpiece', 'No tag', 'Bluetooth connectivity, for iPhone', 'iPhone Bluetooth Earpiece', true, 'Bluetooth connectivity, for iPhone', NOW(), NOW());
+
+-- Phone Holder
+INSERT INTO "Items"(
+    "name", "price", "description", "imageUrl", "category", "tags", "productDetails", 
+    "productModel", "productAvailability", "productSpecification", "createdAt", "updatedAt"
+) VALUES
+( 'Desktop Phone Holder', 3000, 'Sturdy desktop holder for your phone.', '/image/phoneholder.png', 'Phone Holder', 'No tag', 'Sturdy design, adjustable angle', 'Desktop Phone Holder', true, 'Sturdy design, adjustable angle', NOW(), NOW()),
+( 'Universal Mobile Phone Table Stand', 4500, 'Universal stand for mobile phones.', '/image/phoneholder.png', 'Phone Holder', 'top-deals', 'Universal fit, adjustable angle', 'Universal Mobile Phone Table Stand', true, 'Universal fit, adjustable angle', NOW(), NOW());
+
+-- Multifunctional Box
+INSERT INTO "Items"(
+    "name", "price", "description", "imageUrl", "category", "tags", "productDetails", 
+    "productModel", "productAvailability", "productSpecification", "createdAt", "updatedAt"
+) VALUES
+( 'Phone Multifunctional Box', 5000, 'Multifunctional box for organizing phone accessories.', '/image/multibox.png', 'Multifunctional Boxe', 'limited-offers', 'Organizes phone accessories', 'Phone Multifunctional Box', true, 'Organizes phone accessories', NOW(), NOW());
+
+-- Screen Protector
+INSERT INTO "Items"(
+    "name", "price", "description", "imageUrl", "category", "tags", "productDetails", 
+    "productModel", "productAvailability", "productSpecification", "createdAt", "updatedAt"
+) VALUES
+( 'PMMA Watch Screen Protector 40 mm', 2000, 'PMMA screen protector for 40 mm watch.', '/image/screenprotector.png', 'Screen Protector', 'No tag', 'PMMA material, 40 mm', 'PMMA Watch Screen Protector 40 mm', true, 'PMMA material, 40 mm', NOW(), NOW()),
+( 'PMMA Watch Screen Protector 42 mm', 2000, 'PMMA screen protector for 42 mm watch.', '/image/screenprotector.png', 'Screen Protector', 'No tag', 'PMMA material, 42 mm', 'PMMA Watch Screen Protector 42 mm', true, 'PMMA material, 42 mm', NOW(), NOW()),
+( 'PMMA Watch Screen Protector 49 mm', 2000, 'PMMA screen protector for 49 mm watch.', '/image/screenprotector.png', 'Screen Protector', 'No tag', 'PMMA material, 49 mm', 'PMMA Watch Screen Protector 49 mm', true, 'PMMA material, 49 mm', NOW(), NOW()),
+( 'PMMA Watch Screen Protector 38 mm', 2000, 'PMMA screen protector for 38 mm watch.', '/image/screenprotector.png', 'Screen Protector', 'No tag', 'PMMA material, 38 mm', 'PMMA Watch Screen Protector 38 mm', true, 'PMMA material, 38 mm', NOW(), NOW()),
+( 'PMMA Watch Screen Protector 45 mm', 2000, 'PMMA screen protector for 45 mm watch.', '/image/screenprotector.png', 'Screen Protector', 'No tag', 'PMMA material, 45 mm', 'PMMA Watch Screen Protector 45 mm', true, 'PMMA material, 45 mm', NOW(), NOW()),
+( 'Watch Screen Protector 360', 2000, '360-degree watch screen protector.', '/image/screenprotector.png', 'Screen Protector', 'limited-offers', '360-degree protection', 'Watch Screen Protector 360', true, '360-degree protection', NOW(), NOW());
+
+-- Gamepads
+INSERT INTO "Items"(
+    "name", "price", "description", "imageUrl", "category", "tags", "productDetails", 
+    "productModel", "productAvailability", "productSpecification", "createdAt", "updatedAt"
+) VALUES
+( 'Laptop Gamepad U.com', 3500, 'Gamepad for laptops with good performance.', '/image/gamepad.png', 'Gamepad', 'top-deals', 'Good performance, compatible with laptops', 'Laptop Gamepad U.com', true, 'Good performance, compatible with laptops', NOW(), NOW());
+
+-- Jack
+INSERT INTO "Items"(
+    "name", "price", "description", "imageUrl", "category", "tags", "productDetails", 
+    "productModel", "productAvailability", "productSpecification", "createdAt", "updatedAt"
+) VALUES
+( 'Samsung Headset Jack', 3500, 'Headset jack compatible with Samsung devices.', '/image/jack.png', 'Jack', 'top-deals', 'Compatible with Samsung devices', 'Samsung Headset Jack', true, 'Compatible with Samsung devices', NOW(), NOW());
