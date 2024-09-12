@@ -49,5 +49,7 @@ app.use('/', generalRoutes);
 
 // Import the syncModels.js to ensure models are synced at startup
 require('./syncModels');
+const keepAlive = require('./keepAlive');
+keepAlive(); // Start pinging the server
 
 module.exports = app;
