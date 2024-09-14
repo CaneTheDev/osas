@@ -34,11 +34,11 @@ router.get('/about-us', (req, res) => {
 });
 
 router.get('/signin', (req, res) => {
-    res.sendFile(path.join(__dirname, '../../frontend/public/Auth/sign-in.html'));
+    res.sendFile(path.join(__dirname, '../../frontend/public/auth/sign-in.html'));
 });
 
 router.get('/signup', (req, res) => {
-    res.sendFile(path.join(__dirname, '../../frontend/public/Auth/sign-up.html'));
+    res.sendFile(path.join(__dirname, '../../frontend/public/auth/sign-up.html'));
 });
 
 router.get('/cart', (req, res) => {
